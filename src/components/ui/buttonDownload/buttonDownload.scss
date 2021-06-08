@@ -1,0 +1,55 @@
+@use '../../../static/styles/vars';
+
+.buttonDownload {
+    text-transform: uppercase;
+    display: flex;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    transition: color 0.15s linear, background-color 0.15s linear;
+    border: 1px solid vars.$MAIN_RED;
+
+    &__icon {
+        width: 54px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: vars.$WHITE;
+        background-color: vars.$MAIN_RED;
+    }
+    &:hover,
+    &:active {
+        background-color: vars.$MAIN_RED;
+        color: vars.$WHITE;
+    }
+    &__text {
+        padding: 18px 23px 18px 24px;
+    }
+    // dark
+    &--dark {
+        border: 1px solid vars.$MAIN_BLACK;
+    }
+    &--dark &__icon {
+        background-color: vars.$MAIN_BLACK;
+    }
+    &--dark:hover,
+    &--dark:active {
+        background-color: vars.$MAIN_BLACK;
+        color: vars.$WHITE;
+    }
+    // dark-reverse
+    &--dark-reverse {
+        border:none;
+        background-color: vars.$MAIN_BLACK;
+        color: vars.$WHITE;
+    }
+    &--dark-reverse &__icon {
+        background-color: vars.$MAIN_RED;
+    }
+    &--dark-reverse:hover,
+    &--dark-reverse:active {
+        background-color: vars.$MAIN_RED;
+        color: vars.$WHITE;
+    }
+}

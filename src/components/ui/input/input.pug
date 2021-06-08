@@ -1,0 +1,9 @@
+mixin input(placeholder, usePlaceholderInInput, value, mode)
+    .input(class!=attributes.class + (mode ? ` input--${mode} ` : ' '))
+        input(
+            type="text"
+            required="required"
+            placeholder=(usePlaceholderInInput ? placeholder : ' ')
+            value=(value ? value : '')
+            ).input__field
+        .input__placeholder= placeholder

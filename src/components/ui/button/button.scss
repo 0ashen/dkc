@@ -1,0 +1,33 @@
+@use '../../../static/styles/vars';
+
+.button {
+    padding: 19px 24px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: vars.$MAIN_RED;
+    transition: background-color 0.15s linear, color 0.15s linear;
+    color: vars.$WHITE;
+
+    &:disabled {
+        background-color: vars.$DARKEN_GREY;
+        color: vars.$MEDIUM_GREY;
+    }
+
+    &:hover,
+    &:active {
+        background-color: vars.$CORAL;
+    }
+    // mode white
+    &--white {
+        background-color: vars.$WHITE;
+        color: vars.$MAIN_BLACK;
+    }
+
+    &--white:hover,
+    &--white:active {
+        background-color: vars.$MAIN_RED;
+        color: vars.$WHITE;
+    }
+}

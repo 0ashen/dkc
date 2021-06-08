@@ -1,0 +1,3 @@
+mixin button(text, mode)
+    button.button(class!=attributes.class + (mode ? ` button--${mode}` : ''))
+        span=text

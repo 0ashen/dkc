@@ -1,0 +1,5 @@
+mixin buttonDownload(text, mode)
+    button.buttonDownload(class!=(attributes.class ? attributes.class : '') + (mode ? ` buttonDownload--${mode}` : ''))
+        .buttonDownload__icon
+            include ../../../static/images/icons/download.svg
+        span.buttonDownload__text=text

@@ -1,0 +1,30 @@
+include ../header/header
+include ../ui/button/button
+
+mixin main
+    .main
+        .wrapper.main__wrapper
+            +header()
+            .main__slider
+                .item
+                    .content
+                        p.title Источники бесперебойного питания DKC 999
+                        p.caption Широкий выбор решений: от домашних до корпоративных
+                        +button('Перейти в каталог')
+                    .image
+                        img(src="../static/images/content/main11.png")
+                .item
+                    .content
+                        p.title Источники бесперебойного питания DKC 2
+                        p.caption Широкий выбор решений: от домашних до корпоративных
+                        +button('Перейти в каталог')
+                    .image
+                        img(src="../static/images/content/main11.png")
+                .item
+                    .content
+                        p.title Источники бесперебойного питания DKC 3
+                        p.caption Широкий выбор решений: от домашних до корпоративных
+                        +button('Перейти в каталог')
+                    .image
+                        img(src="../static/images/content/main11.png")
+

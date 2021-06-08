@@ -1,0 +1,10 @@
+mixin navToCalcs(mode)
+    ul.navToCalcs(class!=attributes.class + (mode ? ` button--${mode}` : ''))
+        li.navToCalcs__item
+            a(href="/").navToCalcs__item-link
+                include ../../static/images/icons/conf.svg
+                span Конфигуратор
+        li.navToCalcs__item
+            a(href="/").navToCalcs__item-link
+                include ../../static/images/icons/calc.svg
+                span Расчет стоимости

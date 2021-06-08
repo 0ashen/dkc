@@ -1,0 +1,33 @@
+@import "common";
+
+ //plugins
+@import "../../../node_modules/normalize.css";
+@import "../../../node_modules/flickity/css/flickity.css";
+//import "flickity-fade/flickity-fade.css";
+
+ //ui
+@import "../../components/ui/button/button";
+@import "../../components/ui/buttonDownload/buttonDownload";
+@import "../../components/ui/social/social";
+@import "../../components/ui/sliderArrow/sliderArrow";
+@import "../../components/ui/input/input";
+
+ //components
+@import "../../components/header/header";
+@import "../../components/main/main";
+@import "../../components/dkcDescription/dkcDescription";
+@import "../../components/advantages/advantages";
+@import "../../components/products/products";
+@import "../../components/configurator/configurator";
+@import "../../components/captureForm/captureForm";
+@import "../../components/resources/resources";
+@import "../../components/advertisingMaterials/advertisingMaterials";
+@import "../../components/projectsSlider/projectsSlider";
+@import "../../components/dkcPartners/dkcPartners";
+@import "../../components/serviceCentres/serviceCentres";
+@import "../../components/aboutCompany/aboutCompany";
+@import "../../components/footer/footer";
+@import "../../components/sidebarScrollable/sidebarScrollable";
+@import "../../components/menu/menu";
+@import "../../components/navToCalcs/navToCalcs";
+@import "../../components/welcome/welcome";

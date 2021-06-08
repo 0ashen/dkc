@@ -1,0 +1,142 @@
+@use '../../static/styles/vars';
+
+.main {
+    background-color: vars.$MAIN_BLACK;
+    color: vars.$WHITE;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        margin-top: 65px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__slider {
+        width: 100%;
+        .item {
+            width: 100%;
+            height: 582px;
+            padding-top: 70px;
+            display: flex;
+            box-sizing: content-box;
+            @media screen and (max-width: 1200px) {
+                padding-top: 99px;
+                position: relative;
+                z-index: 0;
+                height: 553px;
+            }
+            @media screen and (max-width: 768px) {
+                padding-top: 56px;
+                height: 546px;
+            }
+            .content {
+                .title {
+                    font-weight: bold;
+                    font-size: 56px;
+                    line-height: 68px;
+                    margin-bottom: 16px;
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 48px;
+                        line-height: 59px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 36px;
+                        line-height: 44px;
+                        margin-bottom: 6px;
+                    }
+                }
+                .caption {
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-bottom: 64px;
+                    @media screen and (max-width: 1200px) {
+                        font-size: 16px;
+                        line-height: 28px;
+                        max-width: 50%;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 15px;
+                        line-height: 24px;
+                        margin-bottom: 64px;
+                        max-width: 100%;
+                    }
+                }
+                .button {
+                }
+            }
+            .image {
+                width: 59%;
+                @media screen and (max-width: 1200px) {
+                    position: absolute;
+                    top: 8%;
+                    left: 34%;
+                    width: 106%;
+                    z-index: -1;
+                }
+                @media screen and (max-width: 768px) {
+                    left: 0;
+                    top: auto;
+                    bottom: 0;
+                    width: 100%;
+                }
+                img {
+                    display: block;
+                    transform: translate(-26px, -38px);
+                    @media screen and (max-width: 1200px) {
+                        width: 100%;
+                        transform: translate(0, 0);
+                    }
+                }
+            }
+        }
+        .flickity-page-dots {
+            position: absolute;
+            left: 0;
+            bottom: 32px;
+            display: flex;
+            counter-reset: a;
+            .dot {
+                margin: 0;
+                height: auto;
+                background: none;
+                border-radius: 0;
+                width: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                transition: width 0.8s ease-in-out;
+                opacity: 1;
+
+                &.is-selected {
+                    width: 100px;
+                }
+                &:not(:last-child) {
+                    margin-right: 24px;
+                }
+                &::before {
+                    content: '0' counter(a);
+                    counter-increment: a;
+                    color: vars.$DARKEN_GREY;
+                    margin-bottom: 7px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    display: block;
+                    transition: color 0.8s ease-in-out;
+                }
+                &.is-selected::before {
+                    color: vars.$WHITE;
+                }
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background: vars.$DARKEN_GREY;
+                    display: block;
+                }
+            }
+        }
+    }
+}

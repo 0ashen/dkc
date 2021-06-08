@@ -1,0 +1,17 @@
+include ../navToCalcs/navToCalcs
+
+mixin header
+    header.header
+        .header__wrapper
+            a.header__logo(href="/")
+                include ../../static/images/icons/logo.svg
+            +navToCalcs().header__menu-left
+            ul.menu-right.header__menu-right
+                li.menu-right__item
+                    a(href="/").menu-right__item-link О компании
+                li.menu-right__item
+                    a(href="/").menu-right__item-link Продукция
+                li.menu-right__item
+                    a(href="/").menu-right__item-link Сертификаты
+                li.menu-right__item
+                    a(href="/").menu-right__item-link Выполненные проекты

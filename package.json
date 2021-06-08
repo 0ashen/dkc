@@ -1,0 +1,50 @@
+{
+  "name": "dkc",
+  "version": "1.0.0",
+  "author": "Phil Ius http://about.px0.ru/ на сайте есть телеграмм",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.0-beta.3.1",
+    "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+    "@types/flickity": "^2.2.4",
+    "@types/inputmask": "^5.0.0",
+    "@types/react": "^15.0.0 || ^16.0.0 || ^17.0.0 ",
+    "@types/react-dom": "^17.0.5",
+    "@types/react-select": "^4.0.15",
+    "@types/react-text-mask": "^5.4.7",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-prettier": "^3.4.0"
+  },
+  "scripts": {
+    "start": "parcel src/pages/index.pug -p 23880",
+    "clean": "rm dist/*.*",
+    "build": "parcel build src/pages/index.pug --no-content-hash --no-cache",
+    "deploy": "surge",
+    "type-check": "tsc",
+    "lint": "eslint ./**/* --ext .{ts,tsx} -f unix",
+    "lint-and-fix": "eslint ./**/* --ext .{ts,tsx} --fix -f unix",
+    "prettier-format": "prettier --config .prettierrc ./**/*.{ts,tsx,scss,graphql} --write",
+    "prettier-watch": "onchange ./**/*.{ts,tsx,scss,graphql} -- prettier --write {{changed}}"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "flickity": "^2.2.2",
+    "flickity-as-nav-for": "^2.0.1",
+    "flickity-fade": "^1.0.0",
+    "formik": "^2.2.8",
+    "inputmask": "^5.0.5",
+    "normalize.css": "^8.0.1",
+    "parcel": "^2.0.0-beta.3.1",
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0 ",
+    "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0 ",
+    "react-dropzone": "^11.3.2",
+    "react-select": "^4.3.1",
+    "react-text-mask": "^5.4.3",
+    "react-yandex-maps": "^4.6.0",
+    "yup": "^0.32.9"
+  }
+}

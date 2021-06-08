@@ -1,0 +1,6 @@
+.chache
+dist
+.parcel-cache
+# Project exclude paths
+/node_modules/
+/temp/

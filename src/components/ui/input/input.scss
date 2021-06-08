@@ -1,0 +1,42 @@
+@use '../../../static/styles/vars';
+
+.input {
+    display: flex;
+    flex-direction: column;
+    &__field {
+        height: 34px;
+        border-bottom: 1px solid vars.$LIGHT_GREY;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        padding-bottom: 7px;
+        padding-top: 3px;
+        outline: none;
+        color: vars.$DARKEN_GREY;
+        &:focus {
+            border-bottom: 1px solid vars.$MAIN_RED;
+        }
+        &::placeholder {
+            color: vars.$MEDIUM_GREY;
+        }
+    }
+    &__error {
+        font-size: 14px;
+        color: vars.$MAIN_RED;
+        padding-top: 5px;
+    }
+    &__placeholder {
+        order: -1;
+        font-size: 12px;
+        line-height: 15px;
+        color: vars.$MEDIUM_GREY;
+        opacity: 0;
+    }
+    &__field:valid + &__placeholder {
+        opacity: 0.7;
+    }
+    // white mode
+    &--white &__field {
+        color: vars.$WHITE;
+    }
+}

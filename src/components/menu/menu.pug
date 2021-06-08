@@ -1,0 +1,19 @@
+include ../navToCalcs/navToCalcs
+
+mixin menu
+    menu.menu
+        .menu__inner
+            +navToCalcs().menu__top
+            ul.menu__list
+                li.menu__list-item
+                    a(href="#").menu__list-link О компании
+                li.menu__list-item
+                    a(href="#").menu__list-link Сервисные центры
+                li.menu__list-item
+                    a(href="#").menu__list-link Продукция
+                li.menu__list-item
+                    a(href="#").menu__list-link Где купить
+                li.menu__list-item
+                    a(href="#").menu__list-link Сертификаты</br> и другие материалы
+                li.menu__list-item
+                    a(href="#").menu__list-link Выполненные проекты
