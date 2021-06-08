@@ -1,1 +1,1 @@
-"author": "Филипп Иус http://about.px0.ru/ на сайте есть телеграмм",
+"author": "http://about.px0.ru/",
