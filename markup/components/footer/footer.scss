@@ -5,7 +5,7 @@
     padding-top: 24px;
     padding-bottom: 24px;
     color: $MEDIUM_GREY;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         padding-bottom: 50px;
     }
     &__wrapper {
@@ -16,7 +16,7 @@
             padding-left: 24px;
             padding-right: 0;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
            flex-direction: column;
             justify-content: flex-start;
         }
@@ -27,7 +27,7 @@
             flex-shrink: 0;
             align-self: flex-start;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 28px;
         }
         &-icon {
@@ -63,7 +63,7 @@
                 margin: 0;
                 padding-bottom: 8px;
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 width: 50%;
             }
         }

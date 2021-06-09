@@ -20,7 +20,7 @@
                 margin-bottom: 51px;
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 font-size: 28px;
                 line-height: 34px;
                 margin-bottom: 46px;
@@ -45,7 +45,7 @@
         @media screen and (max-width: 1200px) {
             width: calc((100% - 24px) / 2);
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             width: 100%;
         }
         img {
@@ -60,7 +60,7 @@
             display: block;
             margin-bottom: 12px;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 font-size: 12px;
                 line-height: 20px;
             }

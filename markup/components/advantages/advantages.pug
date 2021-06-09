@@ -1,6 +1,9 @@
 mixin advantages
     .advantages
         .wrapper.advantages__wrapper
+            .advantages__image
+            video(preload autobuffer loop autoplay width="600" height="600").advantages__video
+                source(src="/video_boomerang.mp4")
             .advantages__content
                 .title Преимущества
                 .advantage.advantages__item
@@ -32,4 +35,3 @@ mixin advantages
                         li Расширенная гарантия
                         li Техническая служба поддержки 24 часа
                         li Собственная сервисная служба
-            img(src="static/img/content/sequence-dkc-model/1.jpg" width="450" height="450").advantages__video

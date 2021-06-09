@@ -7,7 +7,7 @@
     @media screen and (max-width: 1200px) {
         padding-top: 46px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         padding-top: 64px;
     }
     &__wrapper {
@@ -23,7 +23,7 @@
             line-height: 41px;
             margin-bottom: 65px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             font-size: 28px;
             line-height: 34px;
             margin-bottom: 44px;
@@ -37,7 +37,7 @@
         @media screen and (max-width: 1200px) {
             margin-bottom: 32px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             flex-direction: column;
             margin-bottom: 32px;
         }
@@ -52,7 +52,7 @@
                 line-height: 24px;
                 flex-shrink: 0;
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 font-size: 15px;
                 line-height: 26px;
                 width: 100%;
@@ -60,7 +60,7 @@
             }
             p {
                 width: 133px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     width: 100%;
                 }
             }
@@ -118,7 +118,7 @@
         width: 228px;
         height: 144px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         width: 151px;
         height: 144px;
     }
@@ -140,7 +140,7 @@
         color: $DARKEN_GREY;
         width: 100%;
         text-align: center;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             font-size: 12px;
             line-height: 15px;
         }

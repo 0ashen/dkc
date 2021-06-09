@@ -12,7 +12,7 @@
         line-height: 51px;
         color: $MAIN_BLACK;
         margin-bottom: 24px;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             font-size: 28px;
             line-height: 34px;
             margin-bottom: 32px;
@@ -25,12 +25,12 @@
             justify-content: space-between;
             margin-bottom: 35px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             flex-direction: column;
         }
         &-t1 {
             width: 50%;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 width: 100%;
                 margin-bottom: 32px;
             }
@@ -39,7 +39,7 @@
                 line-height: 30px;
                 color: $DARKEN_GREY;
                 margin-bottom: 59px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     font-size: 15px;
                     line-height: 24px;
                     margin-bottom: 17px;
@@ -51,7 +51,7 @@
                 border-left: 2px solid $MAIN_RED;
                 font-size: 16px;
                 line-height: 27px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     font-size: 15px;
                     line-height: 24px;
                 }
@@ -65,7 +65,7 @@
             @media screen and (max-width: 1200px) {
                 width: 48%;
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 width: 100%;
             }
             p:first-child {
@@ -74,7 +74,7 @@
                 color: $DARKEN_GREY;
                 margin-bottom: 35px;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     font-size: 15px;
                     line-height: 24px;
                     margin-bottom: 32px;
@@ -85,7 +85,7 @@
             }
             p:nth-child(2) {
                 font-size: 16px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     margin-bottom: 1px;
                 }
                 a {
@@ -114,7 +114,7 @@
                 @media screen and (max-width: 1200px) {
                     margin-bottom: 53px;
                 }
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     margin-bottom: 43px;
                 }
                 &--menu-is-open {
@@ -248,7 +248,7 @@
                     justify-content: space-between;
                     padding-right: 24px;
                     margin-bottom: 24px;
-                    @media screen and (max-width: 768px) {
+                    @media screen and (max-width: 767px) {
                         padding-right: 0;
                     }
                     .title {
@@ -262,7 +262,7 @@
                         align-items: center;
                         svg {
                             margin-right: 15px;
-                            @media screen and (max-width: 768px) {
+                            @media screen and (max-width: 767px) {
                                 width: 12px;
                                 height: 16px;
                                 flex-shrink: 0;
@@ -273,7 +273,7 @@
                             font-weight: 600;
                             font-size: 15px;
                             line-height: 18px;
-                            @media screen and (max-width: 768px) {
+                            @media screen and (max-width: 767px) {
                                 font-size: 12px;
                                 line-height: 15px;
                             }
@@ -284,13 +284,13 @@
                     font-size: 16px;
                     line-height: 28px;
                     p {
-                        @media screen and (max-width: 768px) {
+                        @media screen and (max-width: 767px) {
                             display: flex;
                             flex-direction: column;
                         }
                         &:not(:last-child) {
                             margin-bottom: 6px;
-                            @media screen and (max-width: 768px) {
+                            @media screen and (max-width: 767px) {
                                 margin-bottom: 17px;
                             }
                         }

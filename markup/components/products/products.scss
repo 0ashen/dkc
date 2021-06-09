@@ -28,7 +28,7 @@
             padding-bottom: 0;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             padding-top: 64px;
         }
     }
@@ -43,7 +43,7 @@
             line-height: 41px;
             margin-bottom: 23px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             font-size: 28px;
             line-height: 34px;
             margin-bottom: 33px;
@@ -56,7 +56,7 @@
         @media screen and (max-width: 1200px) {
             margin-bottom: 33px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             display: none;
         }
         .item {
@@ -85,7 +85,7 @@
                 margin-bottom: 6px;
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 font-size: 15px;
                 line-height: 30px;
             }
@@ -96,7 +96,7 @@
                 display: flex;
                 gap: 18px;
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 gap: 16px;
                 overflow-x: scroll;
             }
@@ -116,7 +116,7 @@
                     padding-bottom: 6px;
                 }
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 767px) {
                     font-size: 12px;
                     line-height: 15px;
                     white-space: nowrap;
@@ -147,7 +147,7 @@
             padding-top: 24px;
             margin-bottom: 32px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 0;
             padding-bottom: 0;
             height: 477px;
@@ -155,7 +155,7 @@
     }
     &__download1 {
         @media screen and (max-width: 1200px) {
-            display: none;
+            display: none !important;
         }
     }
     &__download2 {
@@ -192,7 +192,7 @@
             width: 312px;
             padding: 24px 24px 15px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             width: 273px;
             padding: 22px 23px 13px;
         }
@@ -206,7 +206,7 @@
         @media screen and (max-width: 1200px) {
             margin-bottom: 22px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             font-size: 15px;
             line-height: 18px;
             margin-bottom: 17px;
@@ -263,7 +263,7 @@
             height: 284px;
             margin-bottom: 17px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             height: 251px;
             margin-bottom: 17px;
         }
@@ -283,7 +283,7 @@
             font-size: 15px;
             line-height: 18px;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 font-size: 12px;
                 line-height: 15px;
             }

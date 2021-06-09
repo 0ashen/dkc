@@ -1,5 +1,3 @@
-@use '../../static/styles/vars';
-
 .advantages {
     background-color: $MAIN_BLACK;
     color: $WHITE;
@@ -10,26 +8,30 @@
         padding-top: 76px;
         padding-bottom: 70px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         padding-top: 64px;
     }
     &__wrapper {
-        display: flex;
         position: relative;
-        justify-content: space-between;
-        @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 767px) {
             z-index: 0;
         }
     }
     &__content {
         z-index: 1;
+        position: relative;
+        margin-top: -600px;
         @media screen and (max-width: 1200px) {
             width: 50%;
         }
 
-        @media screen and (max-width: 768px) {
-            width: 100%;
+        @media screen and (max-width: 767px) {
+            width: calc(100vw - 120px);
             z-index: 1;
+            flex-shrink: 0;
+            margin-top: -100%;
         }
         .title {
             font-weight: bold;
@@ -43,23 +45,46 @@
                 margin-bottom: 72px;
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 font-size: 28px;
                 line-height: 34px;
             }
         }
     }
     &__video {
+        align-self: flex-end;
         position: sticky;
         top: calc(50% - (450px / 2));
-        right: 0px;
+        right: 0;
         //border: 1px solid blue;
-        margin: 0px auto;
+        opacity: 0.65;
+        margin-left: auto;
 
         @media screen and (max-width: 1200px) {
             top: 74px;
             right: 93px;
-            width: 189px;
+            //width: 300px;
+        }
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__image {
+        position: sticky;
+        opacity: 0.65;
+        display: none;
+        width: 100%;
+        padding-top: 100%;
+        background-image: url('/static/img/content/sequence-dkc-model/1.jpg');
+        top: 74px;
+        right: 93px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 767px) {
+            display: block;
         }
     }
     &__item {
