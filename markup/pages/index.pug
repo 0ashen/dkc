@@ -1,0 +1,41 @@
+include ../components/head
+include ../components/main/main
+include ../components/dkcDescription/dkcDescription
+include ../components/advantages/advantages
+include ../components/products/products
+include ../components/configurator/configurator
+include ../components/captureForm/captureForm
+include ../components/resources/resources
+include ../components/advertisingMaterials/advertisingMaterials
+include ../components/projectsSlider/projectsSlider
+include ../components/dkcPartners/dkcPartners
+include ../components/serviceCentres/serviceCentres
+include ../components/aboutCompany/aboutCompany
+include ../components/footer/footer
+include ../components/sidebarScrollable/sidebarScrollable
+include ../components/menu/menu
+include ../components/welcome/welcome
+
+doctype html
+html(lang="ru")
+    head
+        +head
+    body
+        +main()
+        +dkcDescription()
+        +advantages()
+        +products()
+        +configurator()
+        +captureForm()
+        +resources()
+        +advertisingMaterials()
+        +projectsSlider()
+        +dkcPartners()
+        +serviceCentres()
+        +aboutCompany()
+        +footer()
+        +sidebarScrollable()
+        +menu()
+        +welcome()
+
+        script(src='static/js/main%=hash=%%=min=%.js')

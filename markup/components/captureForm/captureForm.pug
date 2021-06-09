@@ -1,0 +1,20 @@
+include ../ui/buttonDownload/buttonDownload
+include ../ui/input/input
+include ../ui/button/button
+
+mixin captureForm
+    .captureForm
+        .wrapper.captureForm__wrapper
+            .captureForm__request-calculate
+                .title Запрос расчета
+                .description Опросный лист позволяет сформировать наиболее точный подбор решения. Скачайте и отправьте нам заполненный опросный лист по адресу <a href="mailto:ups@dkc.ru">ups@dkc.ru</a> или представителю ДКС в вашем регионе.
+                +buttonDownload('Скачать файл анкеты', 'dark')
+                .triangle
+                    include ../../static/img/icons/triangle.svg
+            .captureForm__form#captureForm
+                //form
+                //    +input('Имя', true, false, 'white').captureForm__input
+                //    +input('Фамилия', true, false, 'white').captureForm__input
+                //    +input('E-mail', true, false, 'white').captureForm__input
+                //    +input('Телефон', true, false, 'white').captureForm__input
+                //    +button('Отправить заявку', 'white').captureForm__submit

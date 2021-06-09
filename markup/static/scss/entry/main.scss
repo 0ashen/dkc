@@ -1,0 +1,16 @@
+@import '../normalize';
+
+/* Libraries, which is used in current project. */
+@import 'partials/libraries';
+
+/* Libraries, which is used in current project. */
+@import 'built-in-partials/service';
+
+/* Plugins, which is used in current project. */
+@import 'partials/plugins';
+
+/* Components, which is used in current project. */
+@import 'partials/components';
+
+/* Additional style files. */
+@import '../etc/etc';

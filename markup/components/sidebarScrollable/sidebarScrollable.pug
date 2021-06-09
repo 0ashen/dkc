@@ -1,0 +1,11 @@
+include ../ui/social/social
+
+mixin sidebarScrollable
+    sidebar.sidebarScrollable
+        .sidebarScrollable__mobile-logo
+            include ../../static/img/icons/logo.svg
+        button.sidebarScrollable__menu
+            span
+            span
+            span
+        +social().sidebarScrollable__social

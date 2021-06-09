@@ -1,0 +1,151 @@
+@use '../../static/styles/vars';
+
+.configurator {
+    background: $BG;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    @media screen and (max-width: 1200px) {
+        padding-top: 46px;
+    }
+    @media screen and (max-width: 768px) {
+        padding-top: 64px;
+    }
+    &__wrapper {
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 51px;
+        margin-bottom: 58px;
+        @media screen and (max-width: 1200px) {
+            font-size: 34px;
+            line-height: 41px;
+            margin-bottom: 65px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 44px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 44px;
+
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 32px;
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            margin-bottom: 32px;
+        }
+        &-caption {
+            font-size: 18px;
+            line-height: 30px;
+            color: $DARKEN_GREY;
+            width: 308px;
+            @media screen and (max-width: 1200px) {
+                width: 168px;
+                font-size: 16px;
+                line-height: 24px;
+                flex-shrink: 0;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 15px;
+                line-height: 26px;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            p {
+                width: 133px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-inner {
+            display: flex;
+            gap: 32px;
+            @media screen and (max-width: 1200px) {
+                flex-wrap: wrap;
+                gap: 24px;
+                row-gap: 16px;
+            }
+        }
+
+        &-option {
+        }
+    }
+    &__footer-form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 584px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1200px) {
+            max-width: 482px;
+            margin-right: 0;
+        }
+        &-input {
+            width: calc(50% - 16px);
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                margin-bottom: 23px;
+            }
+        }
+        &-submit {
+            width: 100%;
+            margin-top: 72px;
+            @media screen and (max-width: 1200px) {
+                margin-top: 41px;
+            }
+        }
+    }
+}
+
+.option {
+    width: 276px;
+    height: 144px;
+    border: 1px solid #d4d9db;
+    box-sizing: border-box;
+    cursor: pointer;
+    @media screen and (max-width: 1200px) {
+        width: 228px;
+        height: 144px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 151px;
+        height: 144px;
+    }
+    &.is-active {
+        background-color: $WHITE;
+        border-color: $WHITE;
+    }
+    &__icon {
+        height: 102px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__caption {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: $DARKEN_GREY;
+        width: 100%;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    &.is-active &__caption {
+        color: $MAIN_BLACK;
+    }
+}

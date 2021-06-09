@@ -1,0 +1,20 @@
+@use '../../../static/styles/vars';
+
+.sliderArrow {
+    background: $WHITE;
+    border: 1px solid $MEDIUM_GREY;
+    color: $MEDIUM_GREY;
+    width: 53px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s linear, border-color 0.15s linear,
+        color 0.15s linear;
+    &:hover,
+    &:active {
+        background-color: $MAIN_BLACK;
+        border-color: $MAIN_BLACK;
+        color: $WHITE;
+    }
+}

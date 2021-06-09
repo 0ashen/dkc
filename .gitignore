@@ -1,6 +1,25 @@
+node_modules
+dev
+.DS_Store
+._.DS_Store
+
+.tmpTemplater
+.tmpPreproc
+
+.idea
+npm-debug.log
+phantomjsdriver.log
+/nbproject/*
+
+**/sprite_96.*
+**/svg-fallback-sprite.*
+**/svg-sprite.*
+
+.vscode
 .chache
 dist
 .parcel-cache
 # Project exclude paths
 /node_modules/
 /temp/
+/builds/
