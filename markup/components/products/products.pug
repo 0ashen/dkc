@@ -1,5 +1,6 @@
 include ../ui/sliderArrow/sliderArrow
 include ../ui/buttonDownload/buttonDownload
+include ../ui/productCard/productCard
 
 mixin products
     .products#products
@@ -23,283 +24,24 @@ mixin products
                 .group
                     .title 1 000 – 10 000
                     .body
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title Solo MD SOLO MmB 1
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/1.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 2 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/2.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 3 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/1.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-
+                        +productCard('1-10 Solo MD SOLO MmB 1').products__item
+                        +productCard('1-10 Solo MD SOLO MmB 2').products__item
+                        +productCard('1-10 Solo MD SOLO MmB 3').products__item
                 .group
                     .title 10 000 – 100 000
                     .body
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 4 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/1.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 5 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/2.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 6 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/1.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
+                        +productCard('10-100 Solo MD SOLO MmB 4').products__item
+                        +productCard('10-100 Solo MD SOLO MmB 5').products__item
+                        +productCard('10-100 Solo MD SOLO MmB 6').products__item
                 .group
                     .title 100 000 – 200 000
                     .body
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 7 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/1.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 8 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/2.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 9 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/1.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-
+                        +productCard('100-200 Solo MD SOLO MmB 7').products__item
+                        +productCard('100-200 Solo MD SOLO MmB 8').products__item
+                        +productCard('100-200 Solo MD SOLO MmB 9').products__item
                 .group
-                    .title 200 000 – 10000
+                    .title 200 000 – 1000 000
                     .body
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 10 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/1.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 11 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/2.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-
-                        .product-card.products__item
-                            .product-card__inner
-                                p.title 12 Solo MD SOLO MmB
-                                .params
-                                    .item
-                                        .value 1/1
-                                        .caption Фазность
-                                    .item
-                                        .value Solo MD
-                                        .caption Серия
-                                    .item
-                                        .value 1000 кВТ
-                                        .caption Мощность
-                                .image
-                                    img(src="../static/img/content/products/1.png")
-                                .bot
-                                    .more-info
-                                        span Подробнее
-                                        .arrow-with-shaft
-                                            include ../../static/img/icons/arrow-with-shaft.svg
-                                        .arrow
-                                            include ../../static/img/icons/arrow.svg
-
+                        +productCard('200-1000 Solo MD SOLO MmB 7').products__item
+                        +productCard('200-1000 Solo MD SOLO MmB 7').products__item
+                        +productCard('200-2000 Solo MD SOLO MmB 7').products__item

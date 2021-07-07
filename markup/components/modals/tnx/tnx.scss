@@ -1,0 +1,67 @@
+.tnx {
+    background: rgba(8, 8, 8, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    &.modals--show {
+        display: flex;
+    }
+    .inner {
+        width: 640px;
+        background: #ffffff;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 349px;
+        position: relative;
+        .title {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 75px;
+            max-width: 300px;
+            text-align: center;
+        }
+        & > .close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            &:before {
+                content: '';
+                height: 2px;
+                width: 100%;
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                background-color: #9a9a9a;
+                transform-origin: 50% 50%;
+            }
+            &:after {
+                content: '';
+                height: 2px;
+                width: 100%;
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                background-color: #9a9a9a;
+                transform-origin: 50% 50%;
+            }
+        }
+    }
+}

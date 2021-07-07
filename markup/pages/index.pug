@@ -15,6 +15,8 @@ include ../components/footer/footer
 include ../components/sidebarScrollable/sidebarScrollable
 include ../components/menu/menu
 include ../components/welcome/welcome
+include ../components/modals/joinToClub/joinToClub
+include ../components/modals/tnx/tnx
 
 doctype html
 html(lang="ru")
@@ -36,6 +38,8 @@ html(lang="ru")
         +footer()
         +sidebarScrollable()
         +menu()
-        +welcome()
+        +joinToClub()
+        +tnx()
+        //+welcome()
 
         script(src='static/js/main%=hash=%%=min=%.js')

@@ -1,0 +1,12 @@
+mixin joinToClub
+    .modals.joinToClub
+        .inner
+            .close
+            form
+                +input('Имя', true, false, 'white').captureForm__input
+                +input('Фамилия', true, false, 'white').captureForm__input
+                +input('E-mail', true, false, 'white').captureForm__input
+                +input('Телефон', true, false, 'white').captureForm__input
+                .captureForm__bot
+                    +button('Отправить заявку').captureForm__submit
+                    .captureForm__status.captureForm__status--white Укажите контактное лицо

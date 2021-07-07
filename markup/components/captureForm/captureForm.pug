@@ -20,4 +20,7 @@ mixin captureForm
                     div(tabindex="0" class="captureForm__dropZone")
                         input(multiple="" type="file" autocomplete="off" tabindex="-1" style="display: none;")
                         p Прикрепить файл
-                    +button('Отправить заявку', 'white').captureForm__submit
+                    .captureForm__bot
+                        +button('Отправить заявку', 'white').captureForm__submit
+                        .captureForm__status Форма успешно отправлена!
+

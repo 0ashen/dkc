@@ -12,3 +12,4 @@ import '../../components/welcome/welcome';
 import '../../components/advantages/advantages';
 import '../../components/navToCalcs/navToCalcs';
 import '../../components/menu/menu';
+import '../../components/modals/modals';

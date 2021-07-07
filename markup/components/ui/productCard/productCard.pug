@@ -1,0 +1,69 @@
+mixin productCard(title, mode, direction)
+    .product-card(class!=attributes.class + (mode ? ` product-card--${mode}` : ' ') + (mode ? ` product-card--${direction}` : ' '))
+        .product-card__inner
+            p.title= title ? title : 'Solo MD SOLO MmB 1'
+            if !mode
+                .params
+                    .item
+                        .value 1/1
+                        .caption Фазность
+                    .item
+                        .value Solo MD
+                        .caption Серия
+                    .item
+                        .value 1000 кВТ
+                        .caption Мощность
+            if mode === 'result'
+                .params
+                    .item
+                        .caption Фазность
+                        .value 1/1
+                    .item
+                        .caption Мощность (кВТ)
+                        .value 2/1,20
+                    .item
+                        .caption Автономная работа
+                        .value 3 минуты<br/>(при нагрузке 1кВт)
+                    .item
+                        .caption Вес (кг)
+                        .value 12,90
+                    .item
+                        .caption Размеры (мм)
+                        .value 225×125×380
+                    .item
+                        .caption Разъемы
+                        .value.
+                                <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56895 0H19.431L26 6.95536V20.3529H0V6.95536L6.56895 0ZM7.43105 2L2 7.75052V18.3529H24V7.75052L18.569 2H7.43105Z" fill="#6F6F6F"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64738 2.11768H18.3517L23.8819 7.5871V18.2353H2.11719V7.5871L7.64738 2.11768ZM8.46934 4.11768L4.11719 8.42201V16.2353H21.8819V8.42201L17.5297 4.11768H8.46934Z" fill="#D6D6D6"/>
+                                    <path d="M7.35352 9.4707H8.76528V14.4119H7.35352V9.4707Z" fill="#6F6F6F"/>
+                                    <path d="M17.2363 9.4707H18.6481V14.4119H17.2363V9.4707Z" fill="#6F6F6F"/>
+                                    <path d="M12.293 5.23535H13.7047V10.1765H12.293V5.23535Z" fill="#6F6F6F"/>
+                                </svg>
+                                <span>2</span>
+                                 
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.52739 10.1056V5.42139H4.52739V12.1056H3.14552C3.09472 12.701 3.09472 13.2997 3.14552 13.8951H4.52739V20.2635H2.52739V15.8951H2.26424V14.8951L1.27784 15.0595C1.05062 13.6961 1.05062 12.3046 1.27784 10.9412L2.26424 11.1056V10.1056H2.52739Z" fill="#D6D6D6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4726 10.1056V5.42139H21.4726V12.1056H22.8545C22.9053 12.701 22.9053 13.2997 22.8545 13.8951H21.4726V20.2635H23.4726V15.8951H23.7358V14.8951L24.7222 15.0595C24.9494 13.6961 24.9494 12.3046 24.7222 10.9412L23.7358 11.1056V10.1056H23.4726Z" fill="#D6D6D6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 4.78947V1H12V4.78947H14Z" fill="#D6D6D6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 24.9999V21.2104H12V24.9999H14Z" fill="#D6D6D6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 2C6.92487 2 2 6.92487 2 13C2 19.0751 6.92487 24 13 24C19.0751 24 24 19.0751 24 13C24 6.92487 19.0751 2 13 2ZM0 13C0 5.8203 5.8203 0 13 0C20.1797 0 26 5.8203 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13Z" fill="#6F6F6F"/>
+                                    <path d="M9.21186 13C9.21186 13.6976 8.64633 14.2631 7.9487 14.2631C7.25108 14.2631 6.68555 13.6976 6.68555 13C6.68555 12.3024 7.25108 11.7368 7.9487 11.7368C8.64633 11.7368 9.21186 12.3024 9.21186 13Z" fill="#6F6F6F"/>
+                                    <path d="M14.2646 13C14.2646 13.6976 13.6991 14.2631 13.0014 14.2631C12.3038 14.2631 11.7383 13.6976 11.7383 13C11.7383 12.3024 12.3038 11.7368 13.0014 11.7368C13.6991 11.7368 14.2646 12.3024 14.2646 13Z" fill="#D6D6D6"/>
+                                    <path d="M19.3154 13C19.3154 13.6976 18.7498 14.2631 18.0522 14.2631C17.3546 14.2631 16.7891 13.6976 16.7891 13C16.7891 12.3024 17.3546 11.7368 18.0522 11.7368C18.7498 11.7368 19.3154 12.3024 19.3154 13Z" fill="#6F6F6F"/>
+                                </svg>
+                                <span>2</span>
+
+
+            .image
+                img(src="../static/img/content/products/1.png")
+            .bot
+                a(href="#").more-info
+                    if !mode
+                        span Подробнее
+                        .arrow-with-shaft
+                            include ../../../static/img/icons/arrow-with-shaft.svg
+                        .arrow
+                            include ../../../static/img/icons/arrow.svg
+                    if mode === 'result'
+                        span Технические характеристики

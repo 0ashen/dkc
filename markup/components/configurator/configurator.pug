@@ -1,5 +1,6 @@
 include ../ui/input/input
 include ../ui/button/button
+include ../ui/productCard/productCard
 
 mixin configurator
     .configurator#configurator
@@ -61,4 +62,14 @@ mixin configurator
                 +input('Укажите необходимую мощность (квт)', false, '0, квт').configurator__footer-form-input
                 +input('Время автономной работы', true).configurator__footer-form-input
                 +button('Подобрать ИБП').configurator__footer-form-submit
+            .configurator__form-validation-error
+                span Не удается подобрать ИБП. Пожалуйста укажите необходимую мощность
+            .configurator__form-results
+                .title Мы подобрали для вас несколько вариантов
+                .inner
+                    +productCard('Solo MD SOLO MmB 1', 'result').products__item
+                    +productCard('Solo MD SOLO MmB 1', 'result').products__item
+                    +productCard('Solo MD SOLO MmB 1', 'result').products__item
+                    +productCard('Solo MD SOLO MmB 1', 'result', 'row').products__item
+
 
