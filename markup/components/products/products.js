@@ -54,5 +54,6 @@ document
                 ].map((el) => el.cloneNode(true)),
                 0,
             );
+            slider.select(0);
         });
     });
